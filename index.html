@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloni Jaat | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6ff;
+            color: #252747;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #28285e;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #a9baff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+        }
+
+        nav a:hover {
+            color: #a9baff;
+        }
+
+        .hero {
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+            background: linear-gradient(120deg, #e5e9ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #28285e;
+        }
+
+        .hero h3 {
+            color: #6255c9;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            max-width: 480px;
+        }
+
+        .profile {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 5px solid #aaa4ff;
+            background: #28285e;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background: #6255c9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        section h2 {
+            color: #28285e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin: 12px auto;
+            max-width: 850px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px #00000010;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #e5e4ff;
+            color: #28285e;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        #contact {
+            text-align: center;
+            background: #e9eaff;
+        }
+
+        footer {
+            background: #28285e;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Saloni's Portfolio</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h3>Hello, welcome to my portfolio!</h3>
+            <h1>I'm Saloni Jaat</h1>
+            <h3>CSE Student | Future Web Developer</h3>
+            <p>
+                I am a Computer Science Engineering student.
+                I enjoy learning new technologies and building
+                creative websites. I want to improve my
+                programming and web development skills.
+            </p>
+            <a class="button" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="profile" aria-label="Profile initials">SJ</div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                My name is Saloni Jaat. I am pursuing B.Tech
+                in Computer Science Engineering at Mahakal
+                Group of Institutes, Ujjain. I am a motivated
+                learner who wants to gain practical knowledge
+                and develop useful projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>My Education</h2>
+        <div class="card">
+            <h3>B.Tech - Computer Science Engineering</h3>
+            <p>Mahakal Group of Institutes, Ujjain</p>
+            <p>Currently pursuing my degree.</p>
+        </div>
+        <div class="card">
+            <h3>Higher Secondary Education (12th)</h3>
+            <p>Science Stream - PCM</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="card skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java</span>
+            <span>Problem Solving</span>
+            <span>Communication</span>
+            <span>Teamwork</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: saloni@example.com</p>
+            <p>Interested in learning and working on new projects.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Saloni Jaat | My Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
